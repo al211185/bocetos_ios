@@ -18,6 +18,7 @@
 		FB3B2A532C9B2B4D00A88127 /* boceto_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B2A522C9B2B4D00A88127 /* boceto_1UITestsLaunchTests.swift */; };
 		FB3B2A642C9B364300A88127 /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B2A632C9B364300A88127 /* Cita.swift */; };
 		FB3B2A662C9B36DD00A88127 /* Generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B2A652C9B36DD00A88127 /* Generador_de_citas.swift */; };
+		FBB9EB032C9DD9A30048ADFB /* ControladorCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9EB022C9DD9A30048ADFB /* ControladorCita.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FB3B2A522C9B2B4D00A88127 /* boceto_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB3B2A632C9B364300A88127 /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
 		FB3B2A652C9B36DD00A88127 /* Generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generador_de_citas.swift; sourceTree = "<group>"; };
+		FBB9EB022C9DD9A30048ADFB /* ControladorCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorCita.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		FB3B2A2E2C9B2B4C00A88127 /* boceto_1 */ = {
 			isa = PBXGroup;
 			children = (
+				FBB9EB012C9DD9820048ADFB /* controladores_de_vistas */,
 				FB3B2A622C9B361D00A88127 /* controlador */,
 				FB3B2A5F2C9B358000A88127 /* modelo */,
 				FB3B2A2F2C9B2B4C00A88127 /* AppDelegate.swift */,
@@ -147,6 +150,14 @@
 				FB3B2A652C9B36DD00A88127 /* Generador_de_citas.swift */,
 			);
 			path = controlador;
+			sourceTree = "<group>";
+		};
+		FBB9EB012C9DD9820048ADFB /* controladores_de_vistas */ = {
+			isa = PBXGroup;
+			children = (
+				FBB9EB022C9DD9A30048ADFB /* ControladorCita.swift */,
+			);
+			path = controladores_de_vistas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +293,7 @@
 			files = (
 				FB3B2A642C9B364300A88127 /* Cita.swift in Sources */,
 				FB3B2A342C9B2B4C00A88127 /* ViewController.swift in Sources */,
+				FBB9EB032C9DD9A30048ADFB /* ControladorCita.swift in Sources */,
 				FB3B2A302C9B2B4C00A88127 /* AppDelegate.swift in Sources */,
 				FB3B2A322C9B2B4C00A88127 /* SceneDelegate.swift in Sources */,
 				FB3B2A662C9B36DD00A88127 /* Generador_de_citas.swift in Sources */,
