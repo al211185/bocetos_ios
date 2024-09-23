@@ -9,10 +9,11 @@ import Foundation
 
 struct Cita{
     var nombre: String
+    
     var texto: String
     
-    init(quien: String, que: String) {
-        nombre = quien
-        texto = que
+    init(quien_lo_dijo: String, que_dijo: String){
+        nombre = quien_lo_dijo
+        texto = que_dijo
     }
 }

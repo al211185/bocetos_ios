@@ -13,10 +13,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
 
-
-    @IBSegueAction func movimiento_de_pantalla(_ coder: NSCoder) -> ControladorVistaCita? {
-        return ControladorVistaCita(coder: coder)
+    @IBSegueAction func al_abrir_pantalla_cita(_ coder: NSCoder) -> ControladorPantallaCitas? {
+        return ControladorPantallaCitas(muro_texto: "TSSSEÑOR", de_quien: "Creeper", coder: coder)
     }
 }
 
