@@ -36,12 +36,12 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func volver_a_pantalla_de_inicio(segue: UIStoryboardSegue) {
-        if let pantalla_agregar_citas = segue.source as? ControladorGeneradorCita {
-            // Solo agrega la cita si proviene de ControladorGeneradorCita
+    @IBAction func volver_a_pantalla_de_inicio(segue: UIStoryboardSegue){
+        if let pantalla_agregar_citas = segue.source as? ControladorPantallaCitas{
             citas_disponibles.agregar_cita(cita_para_enviar)
-            actualizar_cantidad() // Actualiza el número de citas
         }
+        actualizar_cantidad()
+
     }
 }
 
