@@ -201,7 +201,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Salir"/>
                                 <connections>
-                                    <segue destination="5Kz-mD-86X" kind="unwind" unwindAction="volver_a_pantalla_de_inicioWithSegue:" id="c28-fH-bab"/>
+                                    <segue destination="5Kz-mD-86X" kind="unwind" unwindAction="volver_a_pantalla_de_inicioWithSegue:" id="MiP-o2-IA5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -469,7 +469,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Agregar cita"/>
                                 <connections>
-                                    <action selector="agregar_cita_nueva:" destination="2Qj-AM-cAM" eventType="touchUpInside" id="LbE-PL-JWK"/>
+                                    <action selector="agregar_cita_nueva:" destination="ZbT-BE-bGW" eventType="touchUpInside" id="YaY-d0-fhG"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ingresa cita" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPc-md-HHH">
@@ -490,8 +490,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="que_es_lo_que_dijo" destination="nPc-md-HHH" id="vtz-dT-Urw"/>
-                        <outlet property="quien_lo_dijo_view" destination="haR-ad-fk5" id="ERF-2y-csu"/>
+                        <outlet property="que_es_lo_que_dijo" destination="nPc-md-HHH" id="OmL-59-URF"/>
+                        <outlet property="quien_lo_dijo_view" destination="haR-ad-fk5" id="t7I-mx-qf6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TC1-iD-H8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

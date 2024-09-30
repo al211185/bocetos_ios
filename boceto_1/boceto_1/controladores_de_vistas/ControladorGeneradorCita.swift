@@ -7,23 +7,29 @@
 
 import UIKit
 
-class ControladorGeneradorCita: UIViewController{
-    var quien_lo_dice: String = ""
-    var que_dice: String = ""
-    
-    var cita_creada: Cita? = nil
-    
-    
+class ControladorGeneradorCita: UIViewController {
+    var generadorDeCitas: GeneradorDeCitas?
+
     @IBOutlet weak var quien_lo_dijo_view: UITextField!
-    
     @IBOutlet weak var que_es_lo_que_dijo: UITextField!
-    
-    
+
     @IBAction func agregar_cita_nueva(_ sender: UIButton) {
-        cita_creada = Cita(quien_lo_dijo: quien_lo_dijo_view.text!,
-                           que_dijo: que_es_lo_que_dijo.text!)
+        guard let nombre = quien_lo_dijo_view.text, !nombre.isEmpty,
+              let citaTexto = que_es_lo_que_dijo.text, !citaTexto.isEmpty else {
+            // Maneja el caso donde los campos están vacíos
+            // Podrías mostrar un alerta aquí si lo deseas
+            return
+        }
+        
+        let nuevaCita = Cita(quien_lo_dijo: nombre, que_dijo: citaTexto)
+        
+        // Asegúrate de que generadorDeCitas no sea nil
+        generadorDeCitas?.agregar_cita(nuevaCita)
+        
+        // Opcional: Cierra el controlador o muestra un mensaje
+        self.dismiss(animated: true, completion: nil)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

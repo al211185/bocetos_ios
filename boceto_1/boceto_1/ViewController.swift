@@ -36,22 +36,12 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func volver_a_pantalla_de_inicio(segue: UIStoryboardSegue){
-        if let pantalla_agregar_citas = segue.source as? ControladorPantallaCitas{
-            citas_disponibles.agregar_cita(<#T##que_dijo: String##String#>, quien_lo_dijo: <#T##String#>)
-            
+    @IBAction func volver_a_pantalla_de_inicio(segue: UIStoryboardSegue) {
+        if let pantalla_agregar_citas = segue.source as? ControladorGeneradorCita {
+            // Solo agrega la cita si proviene de ControladorGeneradorCita
+            citas_disponibles.agregar_cita(cita_para_enviar)
+            actualizar_cantidad() // Actualiza el número de citas
         }
-        
-        actualizar_cantidad()
-       /* print(pantalla_citas?.cita_actual.texto)
-        
-        if let pantalla_citas = segue.source as? ControladorPantallaCitas{
-            citas_disponibles.agregar_cita(pantalla_citas.cita_actual.texto, quien_lo_dijo: pantalla_citas.cita_actual.nombre)
-        }
-        else{
-            print("<Eso no era un objeto de tipo pantalla controlador citas>")
-        }
-        */
     }
 }
 
