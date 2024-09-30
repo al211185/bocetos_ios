@@ -58,6 +58,13 @@
                                             <segue destination="ZbT-BE-bGW" kind="showDetail" id="a5b-rJ-q68"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BK-RS-bbc">
+                                        <rect key="frame" x="24" y="360" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
@@ -111,6 +118,9 @@
                             <constraint firstItem="YpM-yi-kKv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="595" id="zMe-Bl-1Xf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelcito" destination="7BK-RS-bbc" id="Ep6-gz-BiJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,6 +195,15 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aP3-3q-kzA">
+                                <rect key="frame" x="25" y="52" width="58" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Salir"/>
+                                <connections>
+                                    <segue destination="5Kz-mD-86X" kind="unwind" unwindAction="volver_a_pantalla_de_inicioWithSegue:" id="c28-fH-bab"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qoC-rY-8ej"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -196,19 +215,20 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E51-PI-jBy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5Kz-mD-86X" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="756.48854961832058" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Controlador Generador Cita-->
         <scene sceneID="dh4-Gr-nLZ">
             <objects>
-                <viewController id="ZbT-BE-bGW" sceneMemberID="viewController">
+                <viewController id="ZbT-BE-bGW" customClass="ControladorGeneradorCita" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TMe-Up-KnM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HpR-Bm-blk">
-                                <rect key="frame" x="16" y="194" width="361" height="454"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HpR-Bm-blk">
+                                <rect key="frame" x="16" y="262" width="361" height="454"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ais-b2-cPf">
                                         <rect key="frame" x="262" y="337" width="30" height="30"/>
@@ -434,8 +454,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcH-2W-3M7">
+                                <rect key="frame" x="16" y="63" width="58" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Salir"/>
+                                <connections>
+                                    <segue destination="2Qj-AM-cAM" kind="unwind" unwindAction="volver_a_pantalla_de_inicioWithSegue:" id="PTT-57-4Yh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfb-JR-3OC">
+                                <rect key="frame" x="138" y="716" width="117" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Agregar cita"/>
+                                <connections>
+                                    <action selector="agregar_cita_nueva:" destination="2Qj-AM-cAM" eventType="touchUpInside" id="LbE-PL-JWK"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ingresa cita" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPc-md-HHH">
-                                <rect key="frame" x="117" y="648" width="159" height="34"/>
+                                <rect key="frame" x="117" y="186" width="159" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -451,8 +489,13 @@
                             <constraint firstItem="HpR-Bm-blk" firstAttribute="centerY" secondItem="0yC-no-hNT" secondAttribute="centerY" id="cIh-9o-xPq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="que_es_lo_que_dijo" destination="nPc-md-HHH" id="vtz-dT-Urw"/>
+                        <outlet property="quien_lo_dijo_view" destination="haR-ad-fk5" id="ERF-2y-csu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TC1-iD-H8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="2Qj-AM-cAM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="38.931297709923662" y="737.32394366197184"/>
         </scene>
