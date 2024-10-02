@@ -16,48 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CG-Yq-MN3">
-                                <rect key="frame" x="16" y="59" width="90" height="135"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="FIz-Xy-ZoI"/>
-                                    <constraint firstAttribute="height" constant="135" id="Q0b-if-rFx"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFI-hs-ocT">
-                                <rect key="frame" x="281" y="59" width="96" height="135"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="135" id="gO1-cb-Qsa"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="qHV-ys-Xqr"/>
-                                    <constraint firstAttribute="width" constant="96" id="rXy-Gl-WI4"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s03-hi-FGR">
-                                <rect key="frame" x="151.66666666666666" y="238.66666666666663" width="90" height="400"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s03-hi-FGR">
+                                <rect key="frame" x="91" y="239" width="219" height="401"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51t-Xb-Zih">
-                                        <rect key="frame" x="12" y="8" width="75" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button">
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="HQK-3G-Qse" kind="presentation" destinationCreationSelector="al_abrir_pantalla_cita:" modalPresentationStyle="fullScreen" id="d4j-Lr-g9Z"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O41-qT-UzT">
-                                        <rect key="frame" x="10" y="182" width="75" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button">
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="ZbT-BE-bGW" kind="showDetail" id="a5b-rJ-q68"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BK-RS-bbc">
                                         <rect key="frame" x="24" y="360" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -65,57 +26,40 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O41-qT-UzT">
+                                        <rect key="frame" x="51" y="183" width="117" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Agregar cita">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="ZbT-BE-bGW" kind="showDetail" id="a5b-rJ-q68"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51t-Xb-Zih">
+                                        <rect key="frame" x="22" y="122" width="175" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Ver citas generadas">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="HQK-3G-Qse" kind="presentation" destinationCreationSelector="al_abrir_pantalla_cita:" modalPresentationStyle="fullScreen" id="d4j-Lr-g9Z"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="1G5-eQ-Z33"/>
                                     <constraint firstAttribute="width" constant="90" id="eYa-fv-vFD"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Fq-f4-GKJ">
-                                <rect key="frame" x="16" y="371" width="90" height="135"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="NDh-Xi-VWC"/>
-                                    <constraint firstAttribute="height" constant="135" id="kRM-Yf-P5e"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpM-yi-kKv">
-                                <rect key="frame" x="76.666666666666686" y="654" width="240" height="128"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="Abc-N3-uoz"/>
-                                    <constraint firstAttribute="width" constant="240" id="tzV-D8-G9A"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cd-Id-g4F">
-                                <rect key="frame" x="287" y="371" width="90" height="135"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="135" id="3bF-2T-GWD"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="135" id="AgR-79-vJE"/>
-                                    <constraint firstAttribute="width" constant="90" id="KN2-gv-cNo"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="yEo-RM-8dz"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7cd-Id-g4F" secondAttribute="trailing" constant="16" id="2lW-61-oz3"/>
-                            <constraint firstItem="2Fq-f4-GKJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EYQ-LI-YYD"/>
-                            <constraint firstItem="GFI-hs-ocT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JOG-S1-Y9D"/>
                             <constraint firstItem="s03-hi-FGR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NLs-AD-pB7"/>
-                            <constraint firstItem="1CG-Yq-MN3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="T5O-lu-ZFF"/>
-                            <constraint firstItem="1CG-Yq-MN3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YEm-7T-bwX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1CG-Yq-MN3" secondAttribute="trailing" constant="287" id="aLs-b0-Wqa"/>
-                            <constraint firstItem="1CG-Yq-MN3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lez-4x-Stj"/>
-                            <constraint firstItem="2Fq-f4-GKJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="312" id="mHk-vQ-FSl"/>
-                            <constraint firstItem="YpM-yi-kKv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="niI-po-d4w"/>
                             <constraint firstItem="s03-hi-FGR" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pyB-Mb-X0i"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GFI-hs-ocT" secondAttribute="trailing" constant="16" id="wug-r9-sFr"/>
-                            <constraint firstItem="7cd-Id-g4F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="312" id="wyn-AJ-d0K"/>
-                            <constraint firstItem="YpM-yi-kKv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="595" id="zMe-Bl-1Xf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -129,7 +73,7 @@
         <!--Controlador Pantalla Citas-->
         <scene sceneID="Zax-oQ-ITg">
             <objects>
-                <viewController id="HQK-3G-Qse" customClass="ControladorPantallaCitas" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ControladorPantallaCitas" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HQK-3G-Qse" customClass="ControladorPantallaCitas" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="50c-8L-9mk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,8 +154,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="AwL-is-KST"/>
                     <connections>
-                        <outlet property="nombre_de_quien_lo_dijo" destination="Bvq-U0-Y1A" id="XSC-wl-KEs"/>
-                        <outlet property="que_dijo_muro_texto" destination="yLW-Gw-jvt" id="5U3-ZS-XcO"/>
+                        <outlet property="nombre_de_quien_lo_dijo" destination="Bvq-U0-Y1A" id="w6c-I1-vFh"/>
+                        <outlet property="que_dijo_muro_texto" destination="yLW-Gw-jvt" id="bLG-Hl-wJv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E51-PI-jBy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -448,7 +392,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ingresa nombre" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="haR-ad-fk5">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="haR-ad-fk5">
                                 <rect key="frame" x="117" y="144" width="159" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -472,7 +416,7 @@
                                     <action selector="agregar_cita_nueva:" destination="ZbT-BE-bGW" eventType="touchUpInside" id="YaY-d0-fhG"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ingresa cita" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPc-md-HHH">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPc-md-HHH">
                                 <rect key="frame" x="117" y="186" width="159" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -501,9 +445,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="scrollViewTexturedBackgroundColor">
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

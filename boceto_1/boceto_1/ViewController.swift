@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelcito: UILabel!
     
     override func viewDidLoad() {
-        citas_disponibles.generar_citas_falsas()
+        citas_disponibles.citas_creadas
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         actualizar_cantidad()

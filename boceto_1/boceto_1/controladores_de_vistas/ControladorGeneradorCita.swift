@@ -16,21 +16,42 @@ class ControladorGeneradorCita: UIViewController {
     @IBAction func agregar_cita_nueva(_ sender: UIButton) {
         guard let nombre = quien_lo_dijo_view.text, !nombre.isEmpty,
               let citaTexto = que_es_lo_que_dijo.text, !citaTexto.isEmpty else {
-            // Maneja el caso donde los campos están vacíos
-            // Podrías mostrar un alerta aquí si lo deseas
+            mostrarAlertaCamposVacios()
             return
         }
         
         let nuevaCita = Cita(quien_lo_dijo: nombre, que_dijo: citaTexto)
+        generadorDeCitas?.agregar_cita(nuevaCita) // Agrega la nueva cita
         
-        // Asegúrate de que generadorDeCitas no sea nil
-        generadorDeCitas?.agregar_cita(nuevaCita)
-        
-        // Opcional: Cierra el controlador o muestra un mensaje
-        self.dismiss(animated: true, completion: nil)
+        // Presenta la pantalla que muestra todas las citas
+        if let controladorPantallaCitas = storyboard?.instantiateViewController(withIdentifier: "ControladorPantallaCitas") as? ControladorPantallaCitas {
+            controladorPantallaCitas.generadorDeCitas = generadorDeCitas // Pasa la referencia al generador de citas
+            present(controladorPantallaCitas, animated: true, completion: nil)
+        }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        generadorDeCitas = GeneradorDeCitas() // Asegúrate de inicializar el generador de citas
+        configurarPlaceholders()
+    }
+
+    func configurarPlaceholders() {
+        quien_lo_dijo_view.placeholder = "Nombre"
+        que_es_lo_que_dijo.placeholder = "¿Qué es lo que dijo?"
+    }
+    
+    func mostrarAlertaCamposVacios() {
+        let alerta = UIAlertController(title: "Campos Vacíos", message: "Por favor, rellena ambos campos antes de agregar una cita.", preferredStyle: .alert)
+        let accionOK = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alerta.addAction(accionOK)
+        present(alerta, animated: true, completion: nil)
     }
 }
+
+
+
+
+
+
+

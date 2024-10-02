@@ -12,40 +12,39 @@ class ControladorPantallaCitas: UIViewController {
     @IBOutlet weak var nombre_de_quien_lo_dijo: UILabel!
     @IBOutlet weak var que_dijo_muro_texto: UILabel!
     
-    var cita_actual: Cita?
+    var cita_actual: Cita? // Cita que se mostrará en esta pantalla
 
-    required init?(coder: NSCoder) {
+    init?(cita_para_citar: Cita?, coder: NSCoder) {
+        self.cita_actual = cita_para_citar // Inicializa con la cita que se pasa
         super.init(coder: coder)
-        print("Algo paso por aqui")
     }
     
-    // Este es el inicializador que usas para pasar la cita
-    init?(cita_para_citar: Cita, coder: NSCoder) {
-        self.cita_actual = cita_para_citar
+    required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Inicializa la pantalla solo si hay una cita
-        inicializar_pantalla()
-    }
-    
-    func crearCita(nombre: String, texto: String) {
-        cita_actual = Cita(quien_lo_dijo: nombre, que_dijo: texto)
+        inicializar_pantalla() // Solo inicializa la pantalla
     }
     
     func inicializar_pantalla() {
-        // Asegúrate de que cita_actual no sea nil
-        guard let cita = cita_actual else {
-            return
+        // Verifica si hay una cita actual
+        if let cita = cita_actual {
+            // Asigna los valores de la cita a las etiquetas si hay cita
+            nombre_de_quien_lo_dijo.text = cita.nombre
+            que_dijo_muro_texto.text = cita.texto
+        } else {
+            // Si no hay cita, mostrar un mensaje de que no hay citas disponibles
+            nombre_de_quien_lo_dijo.text = "Sin Cita"
+            que_dijo_muro_texto.text = "No hay citas disponibles."
         }
-        
-        // Actualiza los labels con la información de la cita
-        nombre_de_quien_lo_dijo.text = cita_actual?.nombre
-        que_dijo_muro_texto.text = cita_actual?.texto
     }
 }
+
+
+
+
 
 
 
