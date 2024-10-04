@@ -19,46 +19,76 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s03-hi-FGR">
                                 <rect key="frame" x="91" y="239" width="219" height="401"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BK-RS-bbc">
-                                        <rect key="frame" x="24" y="360" width="42" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BK-RS-bbc">
+                                        <rect key="frame" x="169" y="360" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O41-qT-UzT">
-                                        <rect key="frame" x="51" y="183" width="117" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O41-qT-UzT">
+                                        <rect key="frame" x="11" y="183" width="197" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="197" id="tNA-zc-u0N"/>
+                                            <constraint firstAttribute="height" constant="60" id="uRC-or-PvM"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Agregar cita">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="ZbT-BE-bGW" kind="showDetail" id="a5b-rJ-q68"/>
+                                            <segue destination="ZbT-BE-bGW" kind="show" id="VNC-Tv-f1L"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51t-Xb-Zih">
-                                        <rect key="frame" x="22" y="122" width="175" height="35"/>
+                                        <rect key="frame" x="11" y="98" width="197" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Ver citas generadas">
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="groupTableViewBackgroundColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="HQK-3G-Qse" kind="presentation" destinationCreationSelector="al_abrir_pantalla_cita:" modalPresentationStyle="fullScreen" id="d4j-Lr-g9Z"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Citas disponibles:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpu-4Z-YfY">
+                                        <rect key="frame" x="11" y="359" width="135" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="1G5-eQ-Z33"/>
-                                    <constraint firstAttribute="width" constant="90" id="eYa-fv-vFD"/>
+                                    <constraint firstItem="O41-qT-UzT" firstAttribute="top" secondItem="s03-hi-FGR" secondAttribute="top" constant="183" id="0sm-1g-obc"/>
+                                    <constraint firstAttribute="trailing" secondItem="O41-qT-UzT" secondAttribute="trailing" constant="8" id="BxU-Lm-Vb5"/>
+                                    <constraint firstItem="O41-qT-UzT" firstAttribute="top" secondItem="s03-hi-FGR" secondAttribute="top" constant="183" id="GVp-HF-NAf"/>
+                                    <constraint firstItem="O41-qT-UzT" firstAttribute="leading" secondItem="s03-hi-FGR" secondAttribute="leading" constant="14" id="N8C-Ha-eaY"/>
+                                    <constraint firstItem="O41-qT-UzT" firstAttribute="centerX" secondItem="s03-hi-FGR" secondAttribute="centerX" id="VsF-qV-Q7m"/>
+                                    <constraint firstItem="O41-qT-UzT" firstAttribute="centerX" secondItem="s03-hi-FGR" secondAttribute="centerX" id="qYC-AU-BBb"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola, bienvenidx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15R-mC-ckR">
+                                <rect key="frame" x="105" y="198" width="191" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s03-hi-FGR" secondAttribute="trailing" constant="83" id="2vj-CL-3pi"/>
+                            <constraint firstItem="s03-hi-FGR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="BCf-aM-3eP"/>
                             <constraint firstItem="s03-hi-FGR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NLs-AD-pB7"/>
+                            <constraint firstItem="s03-hi-FGR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="iiK-Xs-yeM"/>
                             <constraint firstItem="s03-hi-FGR" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pyB-Mb-X0i"/>
                         </constraints>
                     </view>
@@ -85,6 +115,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aqui tienes una de tus citas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZG-SV-ui8">
+                                <rect key="frame" x="57" y="151" width="260" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLW-Gw-jvt">
                                 <rect key="frame" x="76" y="659" width="241" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -92,8 +129,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aP3-3q-kzA">
+                                <rect key="frame" x="25" y="52" width="58" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Salir">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="5Kz-mD-86X" kind="unwind" unwindAction="volver_a_pantalla_de_inicioWithSegue:" id="MiP-o2-IA5"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="no7-R0-MUU">
-                                <rect key="frame" x="76" y="322" width="241" height="208"/>
+                                <rect key="frame" x="76" y="345" width="241" height="208"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xoW-jQ-1zb">
@@ -139,15 +187,6 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aP3-3q-kzA">
-                                <rect key="frame" x="25" y="52" width="58" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Salir"/>
-                                <connections>
-                                    <segue destination="5Kz-mD-86X" kind="unwind" unwindAction="volver_a_pantalla_de_inicioWithSegue:" id="MiP-o2-IA5"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qoC-rY-8ej"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -392,36 +431,41 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="haR-ad-fk5">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="haR-ad-fk5">
                                 <rect key="frame" x="117" y="144" width="159" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcH-2W-3M7">
                                 <rect key="frame" x="16" y="63" width="58" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Salir"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Salir">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <segue destination="2Qj-AM-cAM" kind="unwind" unwindAction="volver_a_pantalla_de_inicioWithSegue:" id="PTT-57-4Yh"/>
+                                    <segue destination="2Qj-AM-cAM" kind="unwind" unwindAction="volver_a_pantalla_de_inicioWithSegue:" id="fS3-1R-lMA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfb-JR-3OC">
-                                <rect key="frame" x="138" y="716" width="117" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Agregar cita"/>
-                                <connections>
-                                    <action selector="agregar_cita_nueva:" destination="ZbT-BE-bGW" eventType="touchUpInside" id="YaY-d0-fhG"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPc-md-HHH">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPc-md-HHH">
                                 <rect key="frame" x="117" y="186" width="159" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfb-JR-3OC">
+                                <rect key="frame" x="138" y="701" width="117" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Agregar cita">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="agregar_cita_nueva:" destination="ZbT-BE-bGW" eventType="touchUpInside" id="x2b-1v-I20"/>
+                                    <segue destination="2Qj-AM-cAM" kind="unwind" unwindAction="volver_a_pantalla_de_inicioWithSegue:" id="zsa-aP-xFM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0yC-no-hNT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -433,6 +477,7 @@
                             <constraint firstItem="HpR-Bm-blk" firstAttribute="centerY" secondItem="0yC-no-hNT" secondAttribute="centerY" id="cIh-9o-xPq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vIk-lg-F5d"/>
                     <connections>
                         <outlet property="que_es_lo_que_dijo" destination="nPc-md-HHH" id="OmL-59-URF"/>
                         <outlet property="quien_lo_dijo_view" destination="haR-ad-fk5" id="t7I-mx-qf6"/>
@@ -445,6 +490,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="scrollViewTexturedBackgroundColor">
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

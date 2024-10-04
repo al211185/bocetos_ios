@@ -8,8 +8,8 @@
 import UIKit
 
 class ControladorGeneradorCita: UIViewController {
-    var generadorDeCitas: GeneradorDeCitas?
-
+    var cita_creada: Cita? = nil
+    
     @IBOutlet weak var quien_lo_dijo_view: UITextField!
     @IBOutlet weak var que_es_lo_que_dijo: UITextField!
 
@@ -20,19 +20,17 @@ class ControladorGeneradorCita: UIViewController {
             return
         }
         
-        let nuevaCita = Cita(quien_lo_dijo: nombre, que_dijo: citaTexto)
-        generadorDeCitas?.agregar_cita(nuevaCita) // Agrega la nueva cita
-        
-        // Presenta la pantalla que muestra todas las citas
-        if let controladorPantallaCitas = storyboard?.instantiateViewController(withIdentifier: "ControladorPantallaCitas") as? ControladorPantallaCitas {
-            controladorPantallaCitas.generadorDeCitas = generadorDeCitas // Pasa la referencia al generador de citas
-            present(controladorPantallaCitas, animated: true, completion: nil)
-        }
+        // Crear la nueva cita y agregarla al generador
+        print("---------")
+        cita_creada = Cita(quien_lo_dijo: nombre, que_dijo: citaTexto)
+       
+        // Regresa a la pantalla anterior después de agregar la cita
+        // dismiss(animated: true, completion: nil)
     }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        generadorDeCitas = GeneradorDeCitas() // Asegúrate de inicializar el generador de citas
         configurarPlaceholders()
     }
 
@@ -48,6 +46,7 @@ class ControladorGeneradorCita: UIViewController {
         present(alerta, animated: true, completion: nil)
     }
 }
+
 
 
 
