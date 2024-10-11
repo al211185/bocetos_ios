@@ -16,6 +16,10 @@
 		FB3652E92CB433B10013B91B /* boceto_2_CellViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3652E82CB433B10013B91B /* boceto_2_CellViewUITests.swift */; };
 		FB3652EB2CB433B10013B91B /* boceto_2_CellViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3652EA2CB433B10013B91B /* boceto_2_CellViewUITestsLaunchTests.swift */; };
 		FB3652FA2CB4375C0013B91B /* ControladorPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3652F92CB4375C0013B91B /* ControladorPantallaPrincipalDeColeccion.swift */; };
+		FB7A6BF62CB97A7E0047E580 /* VistaDeZelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A6BF52CB97A7E0047E580 /* VistaDeZelda.swift */; };
+		FB7A6BF92CB97B560047E580 /* posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A6BF82CB97B560047E580 /* posts.swift */; };
+		FB7A6BFC2CB97CC30047E580 /* provedor_publicaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A6BFB2CB97CC30047E580 /* provedor_publicaciones.swift */; };
+		FB7A6C012CB9851E0047E580 /* EstiloCellViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A6C002CB9851E0047E580 /* EstiloCellViewcontroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		FB3652E82CB433B10013B91B /* boceto_2_CellViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_2_CellViewUITests.swift; sourceTree = "<group>"; };
 		FB3652EA2CB433B10013B91B /* boceto_2_CellViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_2_CellViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB3652F92CB4375C0013B91B /* ControladorPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
+		FB7A6BF52CB97A7E0047E580 /* VistaDeZelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeZelda.swift; sourceTree = "<group>"; };
+		FB7A6BF82CB97B560047E580 /* posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = posts.swift; sourceTree = "<group>"; };
+		FB7A6BFB2CB97CC30047E580 /* provedor_publicaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = provedor_publicaciones.swift; sourceTree = "<group>"; };
+		FB7A6C002CB9851E0047E580 /* EstiloCellViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloCellViewcontroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,9 @@
 		FB3652F72CB436830013B91B /* controladores_de_pantalla */ = {
 			isa = PBXGroup;
 			children = (
+				FB7A6BFD2CB984C00047E580 /* estilos */,
+				FB7A6BFA2CB97C180047E580 /* proveedor */,
+				FB7A6BF72CB97AED0047E580 /* modelos */,
 				FB3652F82CB436B10013B91B /* vista_de_celdas */,
 			);
 			path = controladores_de_pantalla;
@@ -139,8 +150,33 @@
 			isa = PBXGroup;
 			children = (
 				FB3652F92CB4375C0013B91B /* ControladorPantallaPrincipalDeColeccion.swift */,
+				FB7A6BF52CB97A7E0047E580 /* VistaDeZelda.swift */,
 			);
 			path = vista_de_celdas;
+			sourceTree = "<group>";
+		};
+		FB7A6BF72CB97AED0047E580 /* modelos */ = {
+			isa = PBXGroup;
+			children = (
+				FB7A6BF82CB97B560047E580 /* posts.swift */,
+			);
+			path = modelos;
+			sourceTree = "<group>";
+		};
+		FB7A6BFA2CB97C180047E580 /* proveedor */ = {
+			isa = PBXGroup;
+			children = (
+				FB7A6BFB2CB97CC30047E580 /* provedor_publicaciones.swift */,
+			);
+			path = proveedor;
+			sourceTree = "<group>";
+		};
+		FB7A6BFD2CB984C00047E580 /* estilos */ = {
+			isa = PBXGroup;
+			children = (
+				FB7A6C002CB9851E0047E580 /* EstiloCellViewcontroller.swift */,
+			);
+			path = estilos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +311,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3652C82CB433B00013B91B /* AppDelegate.swift in Sources */,
+				FB7A6C012CB9851E0047E580 /* EstiloCellViewcontroller.swift in Sources */,
+				FB7A6BF62CB97A7E0047E580 /* VistaDeZelda.swift in Sources */,
+				FB7A6BFC2CB97CC30047E580 /* provedor_publicaciones.swift in Sources */,
+				FB7A6BF92CB97B560047E580 /* posts.swift in Sources */,
 				FB3652CA2CB433B00013B91B /* SceneDelegate.swift in Sources */,
 				FB3652FA2CB4375C0013B91B /* ControladorPantallaPrincipalDeColeccion.swift in Sources */,
 			);

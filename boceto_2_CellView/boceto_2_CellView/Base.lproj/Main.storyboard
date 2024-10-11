@@ -33,20 +33,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Eno-yG-DmO">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="236" height="236"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celda_pantalla_principal" id="OcT-ip-2fV">
-                                <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celda_pantalla_principal" id="OcT-ip-2fV" customClass="VistaDeZelda" customModule="boceto_2_CellView" customModuleProvider="target">
+                                <rect key="frame" x="78.666666666666671" y="0.0" width="236" height="236"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HcY-43-Vql">
-                                    <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="236" height="236"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1C-Db-2YU">
+                                            <rect key="frame" x="97" y="26" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAy-tg-ddW">
+                                            <rect key="frame" x="97" y="107.66666666666667" width="42" height="21.000000000000014"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="XAy-tg-ddW" firstAttribute="centerY" secondItem="HcY-43-Vql" secondAttribute="centerY" id="DNP-rf-yfv"/>
+                                        <constraint firstItem="XAy-tg-ddW" firstAttribute="centerX" secondItem="HcY-43-Vql" secondAttribute="centerX" id="eqe-QZ-prP"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <size key="customSize" width="236" height="236"/>
+                                <connections>
+                                    <outlet property="cuerpo" destination="XAy-tg-ddW" id="uLg-SM-dGC"/>
+                                    <outlet property="titulo" destination="J1C-Db-2YU" id="VMz-wf-x0S"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -58,7 +82,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1w-H2-K2S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-366" y="70"/>
+            <point key="canvasLocation" x="-367.17557251908397" y="69.718309859154928"/>
         </scene>
     </scenes>
     <resources>

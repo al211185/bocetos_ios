@@ -2,11 +2,15 @@
 //  posts.swift
 //  boceto_2_CellView
 //
-//  Created by alumno on 10/11/24.
+//  Created by Jadzia Gallegos on 09/10/24.
 //
 
-import UIKit
-
-class posts: UICollectionViewCell {
-    
+struct Publicacion: Codable{
+    // Decodable: Permite convertir informacion json a un modelo de swift
+    // Encodable: Permite convertir un modelo de siwft a JSON
+    // Codable: Ambas al mismo tiempo
+    var id: Int
+    var userId: Int
+    var title: String
+    var body: String
 }

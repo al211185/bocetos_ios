@@ -1,12 +1,14 @@
 //
-//  VistaDeZelda.swift
+//  VistaDeZeldaCollectionViewCell.swift
 //  boceto_2_CellView
 //
-//  Created by alumno on 10/11/24.
+//  Created by Jadzia Gallegos on 07/10/24.
 //
 
 import UIKit
 
 class VistaDeZelda: UICollectionViewCell {
+    @IBOutlet weak var titulo: UILabel!
     
+    @IBOutlet weak var cuerpo: UILabel!
 }
