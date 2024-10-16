@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB149DAD2CC015FE00F316B1 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = FB149DAC2CC015FE00F316B1 /* RealityKitContent */; };
+		FB149DAF2CC015FE00F316B1 /* algo_para_los_visionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB149DAE2CC015FE00F316B1 /* algo_para_los_visionApp.swift */; };
+		FB149DB12CC015FE00F316B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB149DB02CC015FE00F316B1 /* ContentView.swift */; };
+		FB149DB32CC015FE00F316B1 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB149DB22CC015FE00F316B1 /* ImmersiveView.swift */; };
+		FB149DB52CC015FE00F316B1 /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = FB149DB42CC015FE00F316B1 /* ImageBasedLighting.skybox */; };
+		FB149DB72CC015FE00F316B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB149DB62CC015FE00F316B1 /* Assets.xcassets */; };
+		FB149DBA2CC015FE00F316B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB149DB92CC015FE00F316B1 /* Preview Assets.xcassets */; };
+		FB149DC52CC015FF00F316B1 /* algo_para_los_visionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB149DC42CC015FF00F316B1 /* algo_para_los_visionTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB149DC12CC015FF00F316B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB149D9F2CC015FE00F316B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB149DA62CC015FE00F316B1;
+			remoteInfo = algo_para_los_vision;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB149DA72CC015FE00F316B1 /* algo_para_los_vision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = algo_para_los_vision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB149DAB2CC015FE00F316B1 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		FB149DAE2CC015FE00F316B1 /* algo_para_los_visionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algo_para_los_visionApp.swift; sourceTree = "<group>"; };
+		FB149DB02CC015FE00F316B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB149DB22CC015FE00F316B1 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		FB149DB42CC015FE00F316B1 /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
+		FB149DB62CC015FE00F316B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB149DB92CC015FE00F316B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB149DBB2CC015FE00F316B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB149DC02CC015FF00F316B1 /* algo_para_los_visionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = algo_para_los_visionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB149DC42CC015FF00F316B1 /* algo_para_los_visionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algo_para_los_visionTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB149DA42CC015FE00F316B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB149DAD2CC015FE00F316B1 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB149DBD2CC015FF00F316B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB149D9E2CC015FE00F316B1 = {
+			isa = PBXGroup;
+			children = (
+				FB149DA92CC015FE00F316B1 /* algo_para_los_vision */,
+				FB149DAA2CC015FE00F316B1 /* Packages */,
+				FB149DC32CC015FF00F316B1 /* algo_para_los_visionTests */,
+				FB149DA82CC015FE00F316B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB149DA82CC015FE00F316B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB149DA72CC015FE00F316B1 /* algo_para_los_vision.app */,
+				FB149DC02CC015FF00F316B1 /* algo_para_los_visionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB149DA92CC015FE00F316B1 /* algo_para_los_vision */ = {
+			isa = PBXGroup;
+			children = (
+				FB149DAE2CC015FE00F316B1 /* algo_para_los_visionApp.swift */,
+				FB149DB02CC015FE00F316B1 /* ContentView.swift */,
+				FB149DB22CC015FE00F316B1 /* ImmersiveView.swift */,
+				FB149DB42CC015FE00F316B1 /* ImageBasedLighting.skybox */,
+				FB149DB62CC015FE00F316B1 /* Assets.xcassets */,
+				FB149DBB2CC015FE00F316B1 /* Info.plist */,
+				FB149DB82CC015FE00F316B1 /* Preview Content */,
+			);
+			path = algo_para_los_vision;
+			sourceTree = "<group>";
+		};
+		FB149DAA2CC015FE00F316B1 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				FB149DAB2CC015FE00F316B1 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		FB149DB82CC015FE00F316B1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB149DB92CC015FE00F316B1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB149DC32CC015FF00F316B1 /* algo_para_los_visionTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB149DC42CC015FF00F316B1 /* algo_para_los_visionTests.swift */,
+			);
+			path = algo_para_los_visionTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB149DA62CC015FE00F316B1 /* algo_para_los_vision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB149DC82CC015FF00F316B1 /* Build configuration list for PBXNativeTarget "algo_para_los_vision" */;
+			buildPhases = (
+				FB149DA32CC015FE00F316B1 /* Sources */,
+				FB149DA42CC015FE00F316B1 /* Frameworks */,
+				FB149DA52CC015FE00F316B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = algo_para_los_vision;
+			packageProductDependencies = (
+				FB149DAC2CC015FE00F316B1 /* RealityKitContent */,
+			);
+			productName = algo_para_los_vision;
+			productReference = FB149DA72CC015FE00F316B1 /* algo_para_los_vision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB149DBF2CC015FF00F316B1 /* algo_para_los_visionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB149DCB2CC015FF00F316B1 /* Build configuration list for PBXNativeTarget "algo_para_los_visionTests" */;
+			buildPhases = (
+				FB149DBC2CC015FF00F316B1 /* Sources */,
+				FB149DBD2CC015FF00F316B1 /* Frameworks */,
+				FB149DBE2CC015FF00F316B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB149DC22CC015FF00F316B1 /* PBXTargetDependency */,
+			);
+			name = algo_para_los_visionTests;
+			productName = algo_para_los_visionTests;
+			productReference = FB149DC02CC015FF00F316B1 /* algo_para_los_visionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB149D9F2CC015FE00F316B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					FB149DA62CC015FE00F316B1 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					FB149DBF2CC015FF00F316B1 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FB149DA62CC015FE00F316B1;
+					};
+				};
+			};
+			buildConfigurationList = FB149DA22CC015FE00F316B1 /* Build configuration list for PBXProject "algo_para_los_vision" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB149D9E2CC015FE00F316B1;
+			productRefGroup = FB149DA82CC015FE00F316B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB149DA62CC015FE00F316B1 /* algo_para_los_vision */,
+				FB149DBF2CC015FF00F316B1 /* algo_para_los_visionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB149DA52CC015FE00F316B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB149DB72CC015FE00F316B1 /* Assets.xcassets in Resources */,
+				FB149DBA2CC015FE00F316B1 /* Preview Assets.xcassets in Resources */,
+				FB149DB52CC015FE00F316B1 /* ImageBasedLighting.skybox in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB149DBE2CC015FF00F316B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB149DA32CC015FE00F316B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB149DB12CC015FE00F316B1 /* ContentView.swift in Sources */,
+				FB149DAF2CC015FE00F316B1 /* algo_para_los_visionApp.swift in Sources */,
+				FB149DB32CC015FE00F316B1 /* ImmersiveView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB149DBC2CC015FF00F316B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB149DC52CC015FF00F316B1 /* algo_para_los_visionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB149DC22CC015FF00F316B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB149DA62CC015FE00F316B1 /* algo_para_los_vision */;
+			targetProxy = FB149DC12CC015FF00F316B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FB149DC62CC015FF00F316B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Debug;
+		};
+		FB149DC72CC015FF00F316B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Release;
+		};
+		FB149DC92CC015FF00F316B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"algo_para_los_vision/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ddmi.algo-para-los-vision";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		FB149DCA2CC015FF00F316B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"algo_para_los_vision/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ddmi.algo-para-los-vision";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		FB149DCC2CC015FF00F316B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ddmi.algo-para-los-visionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/algo_para_los_vision.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/algo_para_los_vision";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Debug;
+		};
+		FB149DCD2CC015FF00F316B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ddmi.algo-para-los-visionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/algo_para_los_vision.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/algo_para_los_vision";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB149DA22CC015FE00F316B1 /* Build configuration list for PBXProject "algo_para_los_vision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB149DC62CC015FF00F316B1 /* Debug */,
+				FB149DC72CC015FF00F316B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB149DC82CC015FF00F316B1 /* Build configuration list for PBXNativeTarget "algo_para_los_vision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB149DC92CC015FF00F316B1 /* Debug */,
+				FB149DCA2CC015FF00F316B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB149DCB2CC015FF00F316B1 /* Build configuration list for PBXNativeTarget "algo_para_los_visionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB149DCC2CC015FF00F316B1 /* Debug */,
+				FB149DCD2CC015FF00F316B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB149DAC2CC015FE00F316B1 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FB149D9F2CC015FE00F316B1 /* Project object */;
+}
