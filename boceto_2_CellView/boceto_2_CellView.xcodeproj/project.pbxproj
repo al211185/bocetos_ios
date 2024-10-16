@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB149D9D2CC00E2F00F316B1 /* mod_navegador_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB149D9C2CC00E2F00F316B1 /* mod_navegador_principal.swift */; };
 		FB3652C82CB433B00013B91B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3652C72CB433B00013B91B /* AppDelegate.swift */; };
 		FB3652CA2CB433B00013B91B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3652C92CB433B00013B91B /* SceneDelegate.swift */; };
 		FB3652CF2CB433B00013B91B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FB3652CE2CB433B00013B91B /* Base */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB149D9C2CC00E2F00F316B1 /* mod_navegador_principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mod_navegador_principal.swift; sourceTree = "<group>"; };
 		FB3652C42CB433B00013B91B /* boceto_2_CellView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto_2_CellView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3652C72CB433B00013B91B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB3652C92CB433B00013B91B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				FB7A6C002CB9851E0047E580 /* EstiloCellViewcontroller.swift */,
+				FB149D9C2CC00E2F00F316B1 /* mod_navegador_principal.swift */,
 			);
 			path = estilos;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				FBF325182CBD7D3F00D16CAC /* ControladorPantallaDelPost.swift in Sources */,
 				FB7A6BF92CB97B560047E580 /* posts.swift in Sources */,
 				FB3652CA2CB433B00013B91B /* SceneDelegate.swift in Sources */,
+				FB149D9D2CC00E2F00F316B1 /* mod_navegador_principal.swift in Sources */,
 				FB3652FA2CB4375C0013B91B /* ControladorPantallaPrincipalDeColeccion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
