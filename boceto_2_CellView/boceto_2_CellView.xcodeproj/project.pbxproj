@@ -20,6 +20,7 @@
 		FB7A6BF92CB97B560047E580 /* posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A6BF82CB97B560047E580 /* posts.swift */; };
 		FB7A6BFC2CB97CC30047E580 /* provedor_publicaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A6BFB2CB97CC30047E580 /* provedor_publicaciones.swift */; };
 		FB7A6C012CB9851E0047E580 /* EstiloCellViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A6C002CB9851E0047E580 /* EstiloCellViewcontroller.swift */; };
+		FBF325182CBD7D3F00D16CAC /* ControladorPantallaDelPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF325172CBD7D3F00D16CAC /* ControladorPantallaDelPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FB7A6BF82CB97B560047E580 /* posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = posts.swift; sourceTree = "<group>"; };
 		FB7A6BFB2CB97CC30047E580 /* provedor_publicaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = provedor_publicaciones.swift; sourceTree = "<group>"; };
 		FB7A6C002CB9851E0047E580 /* EstiloCellViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloCellViewcontroller.swift; sourceTree = "<group>"; };
+		FBF325172CBD7D3F00D16CAC /* ControladorPantallaDelPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaDelPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				FB7A6BFA2CB97C180047E580 /* proveedor */,
 				FB7A6BF72CB97AED0047E580 /* modelos */,
 				FB3652F82CB436B10013B91B /* vista_de_celdas */,
+				FBF325172CBD7D3F00D16CAC /* ControladorPantallaDelPost.swift */,
 			);
 			path = controladores_de_pantalla;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				FB7A6C012CB9851E0047E580 /* EstiloCellViewcontroller.swift in Sources */,
 				FB7A6BF62CB97A7E0047E580 /* VistaDeZelda.swift in Sources */,
 				FB7A6BFC2CB97CC30047E580 /* provedor_publicaciones.swift in Sources */,
+				FBF325182CBD7D3F00D16CAC /* ControladorPantallaDelPost.swift in Sources */,
 				FB7A6BF92CB97B560047E580 /* posts.swift in Sources */,
 				FB3652CA2CB433B00013B91B /* SceneDelegate.swift in Sources */,
 				FB3652FA2CB4375C0013B91B /* ControladorPantallaPrincipalDeColeccion.swift in Sources */,
