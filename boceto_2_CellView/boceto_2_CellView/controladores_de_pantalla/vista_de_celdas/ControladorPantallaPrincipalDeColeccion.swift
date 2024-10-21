@@ -27,7 +27,9 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         
         proveedor_publicaciones.obtener_publicaicones{
             [weak self] (publicaciones) in self?.lista_de_publicaciones = publicaciones
+            print("publicaciones recibidas \(publicaciones)")
             DispatchQueue.main.async {
+                print(self?.lista_de_publicaciones)
                 self?.collectionView.reloadData()
             }
         }
@@ -83,9 +85,13 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         
         let pantalla_de_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
         
+        //pantalla_de_publicacion.id_publicacion=indexPath.item
+        pantalla_de_publicacion.id_publicacion = self.lista_de_publicaciones[indexPath.item].id
+        
+        
         self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
         
-        print(self.navigationController)
+        //print(self.navigationController)
 
     }
 

@@ -88,7 +88,7 @@
         <!--Controlador Pantalla Del Post-->
         <scene sceneID="bLI-HW-DDl">
             <objects>
-                <viewController storyboardIdentifier="PantallaPublicacion" id="lBj-9B-QVg" customClass="ControladorPantallaDelPost" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PantallaPublicacion" id="lBj-9B-QVg" customClass="ControladorPantallaDelPost" customModule="boceto_2_CellView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nFn-oq-pma">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
